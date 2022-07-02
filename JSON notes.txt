@@ -1,0 +1,30 @@
+- Full Scorecard JSON (from __NEXT_DATA__)
+
+team  Name (long && abbreviatiom)
+ - props.appPageProps.data.content.scorecard.innings[0..1].team.longName
+ - props.appPageProps.data.content.scorecard.innings[0..1].team.abbreviation
+ // Note other team info in here as well
+ 
+// Runs/Wickets/Overs/balls for inning 
+props.appPageProps.data.content.scorecard.innings[0..1].runs
+props.appPageProps.data.content.scorecard.innings[0..1].wickets
+props.appPageProps.data.content.scorecard.innings[0..1].overs
+props.appPageProps.data.content.scorecard.innings[0..1].balls
+ // Note other inning info in here as well
+
+// Player/Country
+props.appPageProps.data.content.scorecard.innings[0..1].inningBatsmen[0..10].player
+Country Team ID. - Use in a URL to get5 team/country data
+ 
+Fall Of Wickets 
+props.appPageProps.data.content.scorecard.innings[0..1].inningFallOfWickets[0..n].fowWicketNum
+props.appPageProps.data.content.scorecard.innings[0..1].inningFallOfWickets[0..n].fowRuns
+props.appPageProps.data.content.scorecard.innings[0..1].inningFallOfWickets[0..n].fowOvers
+props.appPageProps.data.content.scorecard.innings[0..1].inningFallOfWickets[0..n].fowBalls
+ 
+// Overs score
+props.appPageProps.data.content.scorecard.innings[0..1].inningOvers[0..n].overNumber
+props.appPageProps.data.content.scorecard.innings[0..1].inningOvers[0..n].overRuns
+props.appPageProps.data.content.scorecard.innings[0..1].inningOvers[0..n].overWickets
+
+ // props.appPageProps.data.content.scorecard.innings[0..1].inningOvers[5] = Over 6
